@@ -1,6 +1,7 @@
 // import 'dart:math';
 // import 'dart:math';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -67,25 +68,16 @@ class Login extends ConsumerWidget {
             ),
             child: InkWell(
               onTap: () async {
-                try {
-                  Authentication.signInWithGoogle().then(
-                    (value) {
-                      if (value.user != null) {
-                        Authentication.user = value.user!;
-                      } else {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => MainPage(),
-                          ),
-                        );
-                      }
-                    },
-                  );
-                } on PlatformException {
-                  Navigator.pop(context);
-                }
-              },
+                   try {
+              UserCredential result = await Authentication.signInWithGoogle();
+              if (result.user != null) {
+                print('Signed in with Google: ${result.user!.displayName}');
+              }
+            } catch (e) {
+              print('Error: $e');
+            }
+          },
+              
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
