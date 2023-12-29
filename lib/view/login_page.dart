@@ -68,16 +68,23 @@ class Login extends ConsumerWidget {
             ),
             child: InkWell(
               onTap: () async {
-                   try {
-              UserCredential result = await Authentication.signInWithGoogle();
-              if (result.user != null) {
-                print('Signed in with Google: ${result.user!.displayName}');
-              }
-            } catch (e) {
-              print('Error: $e');
-            }
-          },
-              
+                try {
+                  UserCredential result =
+                      await Authentication.signInWithGoogle();
+                  if (result.user != null) {
+                    print('Signed in with Google: ${result.user!.displayName}');
+
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MainPage(),
+                      ),
+                    );
+                  }
+                } catch (e) {
+                  print('Error signing in with Google: $e');
+                }
+              },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
