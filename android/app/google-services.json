@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "965010415002",
+    "project_id": "tech1-5cc1b",
+    "storage_bucket": "tech1-5cc1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965010415002:android:d46336598093d6f6d2ae23",
+        "android_client_info": {
+          "package_name": "com.example.tec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965010415002-kncqp2e4bt66oue3gd2kosmo4risq088.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeP3s5JOmGkw5AIn-rw5sdc5aDg12eSbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965010415002-kncqp2e4bt66oue3gd2kosmo4risq088.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "965010415002-334es76rebbce14dg1vas9qk64pepjl7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tech2.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965010415002:android:832bcc778cbf2256d2ae23",
+        "android_client_info": {
+          "package_name": "com.example.tech2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965010415002-kncqp2e4bt66oue3gd2kosmo4risq088.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeP3s5JOmGkw5AIn-rw5sdc5aDg12eSbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965010415002-kncqp2e4bt66oue3gd2kosmo4risq088.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "965010415002-334es76rebbce14dg1vas9qk64pepjl7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tech2.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
