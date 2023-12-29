@@ -338,17 +338,7 @@ class MainPage extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.home), label: 'Home'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.explore_outlined), label: 'Explore'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle_outlined), label: 'Profile')
-        ],
-        selectedItemColor: Colors.orange,
-      ),
+     
     );
   }
 }

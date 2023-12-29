@@ -8,6 +8,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:tec/authnetication/google_auth.dart';
 import 'package:tec/extension/responsive.dart';
 import 'package:tec/view/main_page.dart';
+import 'package:tec/view/page_view.dart';
 // import 'package:flutter/services.dart';
 
 class Login extends ConsumerWidget {
@@ -77,7 +78,7 @@ class Login extends ConsumerWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MainPage(),
+                        builder: (context) => Pageview(),
                       ),
                     );
                   }
